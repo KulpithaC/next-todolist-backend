@@ -11,5 +11,5 @@ model Post {
   id       String    @id @default(auto()) @map("_id") @db.ObjectId
   name     String
   createDate DateTime  @default(now())
-  updateDate Datetime
+  updateDate DateTime?
 }
